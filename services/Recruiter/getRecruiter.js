@@ -8,7 +8,8 @@ async function getRecruiter(params) {
             name: rec.recname,
             email: rec.email,
             phone: rec.phone,
-            company: rec.company,
+            designation: rec.designation,
+            domain: rec.domain,
         }
         return resp;
     } catch (error) {
