@@ -7,7 +7,7 @@ const pool = require('../../db/createconnection');
  */
 const getById = async (id) => {
     try {
-        const [rows] = await pool.query('SELECT * FROM recruiter_profile WHERE id = ?', [id]);
+        const [rows] = await pool.query('SELECT id, recname, email, phone FROM recruiter_profile WHERE id = ?', [id]);
         return rows[0] || null;
     } catch (error) {
         console.error('Error in RecruiterDAO.getById:', error);
