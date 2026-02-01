@@ -7,9 +7,7 @@ async function getRecruiter(req, res) {
     const resp = await RecruiterService.getRecruiter({ recruiterid });
 
     if (resp) {
-      res.json({
-        resp
-      });
+      res.json(resp);
     } else {
       res.status(404).json({
         message: 'Recruiter not found'
