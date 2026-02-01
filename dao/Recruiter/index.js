@@ -1,13 +1,8 @@
 const pool = require('../../db/createconnection');
 
-/**
- * Fetch a recruiter by ID
- * @param {number} id 
- * @returns {Promise<Object|null>}
- */
 const getById = async (id) => {
     try {
-        const [rows] = await pool.query('SELECT id, recname, email, phone FROM recruiter_profile WHERE id = ?', [id]);
+        const [rows] = await pool.query('SELECT id, recname, email, phone FROM recruiter_profile  as rp WHERE rp.id = ?', [id]);
         return rows[0] || null;
     } catch (error) {
         console.error('Error in RecruiterDAO.getById:', error);
@@ -15,22 +10,17 @@ const getById = async (id) => {
     }
 };
 
-/**
- * Fetch all recruiters (with optional limit)
- * @param {number} limit 
- * @returns {Promise<Array>}
- */
-const getAll = async (limit = 10) => {
+const getByDomain = async (domain, limit = 10) => {
     try {
-        const [rows] = await pool.query('SELECT * FROM recruiter_profile LIMIT ?', [limit]);
+        const [rows] = await pool.query('SELECT id, recname, email, phone, designation FROM recruiter_profile WHERE domain = ?  order by id desc LIMIT ?', [domain, limit]);
         return rows;
     } catch (error) {
-        console.error('Error in RecruiterDAO.getAll:', error);
+        console.error('Error in RecruiterDAO.getByDomain:', error);
         throw error;
     }
 };
 
 module.exports = {
     getById,
-    getAll,
+    getByDomain
 };
