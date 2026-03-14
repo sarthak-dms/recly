@@ -1,0 +1,106 @@
+{
+  "generatedAt": "2026-03-15T00:00:00.000Z",
+  "sourceTable": "recruiter_profile",
+  "rowCount": 9,
+  "rows": [
+    {
+      "id": 1,
+      "recname": "Zed",
+      "email": "zed@example.com",
+      "phone": "1111111111",
+      "designation": "Lead",
+      "domain": "Example.com",
+      "company_id": 10,
+      "organisation": "Acme",
+      "status": 1
+    },
+    {
+      "id": 2,
+      "recname": "Amy",
+      "email": "amy@example.com",
+      "phone": "2222222222",
+      "designation": "Manager",
+      "domain": "example.com",
+      "company_id": 10,
+      "organisation": "Acme Corp",
+      "status": 1
+    },
+    {
+      "id": 3,
+      "recname": "Bob",
+      "email": "bob@example.com",
+      "phone": "3333333333",
+      "designation": "Analyst",
+      "domain": "example.com",
+      "company_id": 10,
+      "organisation": "Acme",
+      "status": 0
+    },
+    {
+      "id": 4,
+      "recname": "Cara",
+      "email": "cara@sub.example.com",
+      "phone": "4444444444",
+      "designation": "Director",
+      "domain": "Sub.example.com",
+      "company_id": 11,
+      "organisation": "Beta",
+      "status": 1
+    },
+    {
+      "id": 5,
+      "recname": "Dan",
+      "email": "dan@gamma.com",
+      "phone": "5555555555",
+      "designation": "VP",
+      "domain": "",
+      "company_id": 12,
+      "organisation": "Gamma",
+      "status": 1
+    },
+    {
+      "id": 6,
+      "recname": "Eve",
+      "email": "eve@other.com",
+      "phone": "6666666666",
+      "designation": "Recruiter",
+      "domain": "other.com",
+      "company_id": null,
+      "organisation": "Nullco",
+      "status": 1
+    },
+    {
+      "id": 7,
+      "recname": "Fred",
+      "email": "fred@other.com",
+      "phone": "7777777777",
+      "designation": "Partner",
+      "domain": "other.com",
+      "company_id": 13,
+      "organisation": "",
+      "status": 1
+    },
+    {
+      "id": 8,
+      "recname": "Gail",
+      "email": "gail@nodomain.com",
+      "phone": "8888888888",
+      "designation": "Head",
+      "domain": null,
+      "company_id": 14,
+      "organisation": "NoDomain",
+      "status": 1
+    },
+    {
+      "id": 9,
+      "recname": "Hank",
+      "email": "hank@beta.com",
+      "phone": "9999999999",
+      "designation": "Advisor",
+      "domain": "beta.com",
+      "company_id": 11,
+      "organisation": "ZetaBeta",
+      "status": 1
+    }
+  ]
+}

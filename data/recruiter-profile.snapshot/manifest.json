@@ -1,0 +1,58 @@
+{
+  "updatedAt": "2026-03-14T22:25:36.019Z",
+  "sourceTable": "recruiter_profile",
+  "chunkCount": 7,
+  "rowCount": 30000,
+  "nextStartId": 230096,
+  "chunks": [
+    {
+      "fileName": "chunk-200000-202500.json",
+      "generatedAt": "2026-03-14T21:57:32.749Z",
+      "rowCount": 2500,
+      "startId": 200000,
+      "endId": 202500
+    },
+    {
+      "fileName": "chunk-202501-205055.json",
+      "generatedAt": "2026-03-14T22:04:19.527Z",
+      "rowCount": 2500,
+      "startId": 202501,
+      "endId": 205055
+    },
+    {
+      "fileName": "chunk-205056-207594.json",
+      "generatedAt": "2026-03-14T22:08:47.643Z",
+      "rowCount": 2500,
+      "startId": 205056,
+      "endId": 207594
+    },
+    {
+      "fileName": "chunk-207595-212595.json",
+      "generatedAt": "2026-03-14T22:10:06.541Z",
+      "rowCount": 5000,
+      "startId": 207595,
+      "endId": 212595
+    },
+    {
+      "fileName": "chunk-212596-217595.json",
+      "generatedAt": "2026-03-14T22:16:23.002Z",
+      "rowCount": 5000,
+      "startId": 212596,
+      "endId": 217595
+    },
+    {
+      "fileName": "chunk-217596-222595.json",
+      "generatedAt": "2026-03-14T22:17:30.040Z",
+      "rowCount": 5000,
+      "startId": 217596,
+      "endId": 222595
+    },
+    {
+      "fileName": "chunk-222596-230095.json",
+      "generatedAt": "2026-03-14T22:25:36.019Z",
+      "rowCount": 7500,
+      "startId": 222596,
+      "endId": 230095
+    }
+  ]
+}

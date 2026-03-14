@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: recly
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /healthz
+    envVars:
+      - key: RECRUITER_DATA_SOURCE
+        value: json
+      - key: RECRUITER_SNAPSHOT_PATH
+        value: ./data/recruiter-profile.snapshot
